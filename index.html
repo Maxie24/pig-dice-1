@@ -36,6 +36,42 @@
          </form>
        </div>  <!--End login -->
 
+       <div class="pig-game">
+         <button type="button" name="button" onclick="reload();" class="btn bg-info">reStart</button>
+         <div class="row">
+           <div class="col-md-4">
+             <div class="player-name">
+               <p>pLayer One</p>
+               <p class="player-one-name"></p>
+             </div>
+             <div class="player-score">
+               <p>Score: <span class="player-one-score"></span> </p>
+             </div>
+           </div> <!--End div col player-one -->
+
+           <div class="col-md-4">
+
+           </div> <!--End div dice -->
+
+           <div class="col-md-4">
+             <div class="player-name">
+               <p>pLayer Two</p>
+               <p class="player-two-name"></p>
+             </div>
+             <div class="player-score">
+               <p>Score: <span class="player-two-score"></span> </p>
+             </div>
+           </div><!--End div col player-one -->
+         </div> <!--End div row -->
+
+         <div class="round-total">
+           <p>Round Total: <span id="round-total"></span> </p>
+         </div>
+         <button id="roll" type="button" name="button" class="btn bg-success">Roll</button>
+         <button id="hold" type="button" name="button" class="btn bg-danger">Hold</button>
+
+       </div> <!--End div pig-game -->
+
 
      </div> <!--End div container -->
     </body>
