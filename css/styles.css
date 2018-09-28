@@ -1,3 +1,7 @@
 #player-one, #player-two {
   width: 200px;
 }
+
+.pig-game {
+  display: none;
+}
