@@ -37,40 +37,37 @@
        </div>  <!--End login -->
 
        <div class="pig-game">
-         <button type="button" name="button" onclick="reload();" class="btn bg-info">reStart</button>
+         <button id="restart" type="button" name="button" onclick="reload();" class="btn bg-info">reStart</button>
          <div class="row">
            <div class="col-md-4">
              <div class="player-name">
                <p>pLayer One</p>
-               <p class="player-one-name"> </p>
-               <img class="one-turn check" src="images/turn.png" alt="My Turn">
+               <p class="player-one-name"> <span><img class="one-turn check" src="images/turn.png" alt="My Turn"></span> </p>
              </div>
              <div class="player-score">
-               <p>Score: <span class="player-one-score"></span> </p>
+               <p><span class="player-one-score">0</span> </p>
              </div>
            </div> <!--End div col player-one -->
 
            <div class="col-md-4 dice-img">
 
+             <div class="round-total">
+               <p>Round Total: <span id="round-total"></span> </p>
+               <button id="roll" type="button" name="button" class="btn bg-success">Roll</button>
+               <button id="hold" type="button" name="button" class="btn bg-danger">Hold</button>
+             </div>
            </div> <!--End div dice -->
 
            <div class="col-md-4">
              <div class="player-name">
                <p>pLayer Two</p>
-               <p class="player-two-name"> </p>
-               <img class="two-turn check" src="images/turn.png" alt="My Turn">
+               <p class="player-two-name"> <span><img class="two-turn check" src="images/turn.png" alt="My Turn"></span> </p>
              </div>
              <div class="player-score">
-               <p>Score: <span class="player-two-score"></span> </p>
+               <p><span class="player-two-score">0</span> </p>
              </div>
            </div><!--End div col player-one -->
          </div> <!--End div row -->
-
-         <div class="round-total">
-           <p>Round Total: <span id="round-total"></span> </p>
-         </div>
-         <button id="roll" type="button" name="button" class="btn bg-success">Roll</button>
-         <button id="hold" type="button" name="button" class="btn bg-danger">Hold</button>
 
        </div> <!--End div pig-game -->
 

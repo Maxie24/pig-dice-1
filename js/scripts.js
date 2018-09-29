@@ -19,7 +19,7 @@ var roundTotal = 0;
 var roll = function(){
   rolled = Math.floor(Math.random()*6) + 1;
   $("#new-dice").remove();
-  $(".dice-img").append("<img id='new-dice' src='images/dice"+rolled+".png' alt='Dice "+rolled+"'>");
+  $(".dice-img").prepend("<img id='new-dice' src='images/dice"+rolled+".png' alt='Dice "+rolled+"'>");
   if (rolled != 1){
     roundTotal += rolled
   } else {
@@ -69,8 +69,8 @@ $(document).ready(function(){
 
     $(".login").hide();
     $(".pig-game").show();
-    $(".player-one-name").text(playerOne.name);
-    $(".player-two-name").text(playerTwo.name);
+    $(".player-one-name").prepend(playerOne.name);
+    $(".player-two-name").prepend(playerTwo.name);
     $(".two-turn").hide();
     $(".one-turn").show();
 
@@ -94,9 +94,11 @@ $(document).ready(function(){
         turnPlayer();
       }
       roundTotal = 0;
+      $("#round-total").text(roundTotal);
     }) // end hold click
   }) // end submit start
 }) // end ready
+
 
 function reload() {
   location.reload();
