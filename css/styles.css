@@ -5,3 +5,22 @@
 .pig-game {
   display: none;
 }
+
+.dice-img img {
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 15%;
+}
+
+.round {
+  height: 10px;
+  width: 10px;
+  background-color: green;
+  border-radius: 50%
+}
+
+.check {
+  height: 20px;
+  width: 20px;
+}
