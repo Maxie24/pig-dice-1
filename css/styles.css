@@ -1,9 +1,45 @@
 body {
-  
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+}
+
+.container {
+  /* display: flex; */
+  justify-content: center;
+  /* background-image: url(../images/papyrus.png);
+  background */
+}
+
+h2>img {
+  height: 100px;
+  width: 100px;
+}
+#help {
+  border-radius: 50%;
+  float: right;
+}
+
+.login {
+  text-align: center;
+}
+
+.jumbotron {
+  margin:0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 400px;
+  display: block;
 }
 
 #player-one, #player-two {
   width: 200px;
+  display: block;
+  margin:0 auto;
+}
+#start {
+  display: block;
+  margin:0 auto;
 }
 
 .pig-game {
@@ -11,6 +47,7 @@ body {
 }
 
 .dice-img img {
+  margin-top: 20px;
   height: 100px;
   width: 100px;
   border: 2px solid black;
@@ -50,4 +87,20 @@ body {
 #restart {
   display: block;
   margin:0 auto;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+
+.copyname {
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
+}
+
+p > img {
+  height: 30px;
+  width: 30px;
 }
