@@ -7,7 +7,10 @@ body {
   /* display: flex; */
   justify-content: center;
   /* background-image: url(../images/papyrus.png);
-  background */
+  width: 667px;
+  height: 429px;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 h2>img {
@@ -15,7 +18,7 @@ h2>img {
   width: 100px;
 }
 #help {
-  border-radius: 50%;
+  border-radius: 10px;
   float: right;
 }
 
@@ -67,6 +70,8 @@ h2>img {
   height: 250px;
   border-radius: 10%;
   margin: 0 auto;
+  padding-left: -25px;
+  padding-right: -25px;
 }
 
 .dice-img {
